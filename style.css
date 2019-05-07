@@ -1,0 +1,54 @@
+@import './mixins/medias';
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+body {
+    font-size: 62.5%;
+    background-color: #1b1b1b;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40rem;
+    margin: 0 auto;
+}
+
+.screen {
+    height: 13rem;
+    width: 40rem;
+    color: #ffffff;
+    line-height: 20rem;
+    font-size: 5rem;
+    text-align: right;
+}
+
+.case {
+    width: 9.9rem;
+    height: 6.5rem;
+    line-height: 6.5rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.6rem;
+    background: #101010;
+    margin: .05rem;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+.case--black {
+    background: #060606;
+}
+
+.case:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
